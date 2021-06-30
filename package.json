@@ -1,0 +1,15 @@
+{
+  "name": "busca_livros",
+  "version": "1.0.0",
+  "description": "Busca de livros por categoria, ou listagem dos livros exigentes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Bruno Godoi Lomba",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

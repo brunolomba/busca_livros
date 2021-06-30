@@ -6,8 +6,6 @@ const readline = require('readline-sync')
 const entradaInicial = readline.question('Deseja buscar um livro? S/N: ')
 
 // Se for sim, mostra as categorias disponíveis, pergunta qual categoria ela escolhe
-// Se for não, mostra todos os livros em ordem crescente pela quantidade de páginas
-
 if (entradaInicial.toUpperCase() === 'S') {
     console.log('Essas são as categorias disponíveis')
     console.log('Produtividade', '/ História brasileira', '/ Américas', '/ Tecnologia', '/ Estilo de vida')
@@ -17,6 +15,7 @@ if (entradaInicial.toUpperCase() === 'S') {
 
     console.table(retorno)
 
+// Se for não, mostra todos os livros em ordem crescente pela quantidade de páginas
 } else {
     const livrosOrdenados = livros.sort((a, b) => a.paginas - b.paginas)
     console.log('Esses são todos os livros disponíveis:')
